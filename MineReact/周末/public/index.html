@@ -1,0 +1,55 @@
+<html>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="utf-8" />
+    
+    <head>
+        <style>
+            h1{
+                background-color: dodgerblue;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div id='app'>
+        
+        </div>
+        
+        <script>
+            
+            window.onload = () => {
+                
+                //初始化请求歌单
+                let req = new XMLHttpRequest();
+                req.open('get','http://192.168.1.115:3000/musiclist/find',true);
+                req.send();
+
+                req.onreadystatechange = function(){
+                    if(req.status == 200 && req.readyState == 4){
+                        initList(JSON.parse(req.responseText))
+                    }
+                }
+            }
+            
+            //初始化歌单列表
+            function initList(arr){
+
+                for(let list of arr){
+                    let img = document.createElement('img');
+                    img.src = 'http://192.168.1.115:7000/' + list.headImg;
+                    app.appendChild(img);
+                    img.onclick = () => {
+                        
+                        //把当前点击ID保存到sessionStorage里
+                        sessionStorage.id = list._id
+                        location.href = 'list.html?' + 'id=' + list._id;
+                    }
+                }
+                
+            }
+            
+
+        </script>
+    </body>
+
+</html>

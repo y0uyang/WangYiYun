@@ -1,0 +1,100 @@
+<html>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="utf-8" />
+    
+    <head>
+        <style>
+            *{
+                font-family: '微软雅黑'
+            }
+            .app{
+                display: flex;
+                width: 100%;
+                justify-content:center;
+                flex-direction:column
+            }
+            h1,.test,p{
+                display: flex;
+                justify-content:center;
+            }
+            
+            img{
+                border-radius: 200px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="app">
+            <label onclick="location.href='list.html'">< 返回</label>
+            
+            <p id="musicname"></p>
+            <p id="autorname"></p>
+
+            <div class="test">
+                <img id="headImg" style="width:300px;height:300px"/>
+            </div>
+            
+            <p>　</p>
+            <div class="test">
+                <img onclick="clickPlay()" id="playBtn" src="images/play.png" />
+            </div>
+            
+            <audio id="musicAu"></audio>
+            
+            
+        </div>
+        
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/rato.js"></script>
+        
+        <script>
+            var isPlay = true;
+            
+            
+            //点击播放切换歌曲等
+            function clickPlay(){
+                if(isPlay){
+                    playBtn.src = "images/stop.png"
+                    $("#headImg").rotate();
+                    musicAu.play();
+                }
+                   
+                else{
+                    playBtn.src = "images/play.png"
+                    $("#headImg").stopRotate();
+                    musicAu.pause();
+                }
+                    
+                    
+                isPlay = !isPlay;
+                
+            }
+
+            
+            window.onload = () => {
+                
+                let req = new XMLHttpRequest();
+                req.open('get','http://192.168.1.115:3000/music/find?_id=' + sessionStorage.musicid,true);
+                req.send();
+
+                req.onreadystatechange = function(){
+                    if(req.status == 200 && req.readyState == 4){
+                        let obj = JSON.parse(req.responseText);
+                        headImg.src = 'http://192.168.1.115:7000/' + obj.headImg; 
+                        musicname.innerHTML = obj.name;
+                        autorname.innerHTML = obj.autor;
+                        
+                        musicAu.src = 'http://192.168.1.115:7000/' + obj.music;
+                        
+                    }
+                }
+                
+                
+            }
+            
+            
+        </script>
+    </body>
+
+</html>

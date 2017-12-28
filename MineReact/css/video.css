@@ -1,0 +1,125 @@
+.searchTitle{
+    background-color: #d43b33;
+    display:flex;
+    align-items: center;
+    padding:.14rem .3rem;
+}
+.searchTitle>img:nth-of-type(1){
+    width: .34rem;
+    height: .48rem;
+}
+.searchTitle>div>img{
+    width: .25rem;
+    height: .24rem; 
+    margin:0 .1rem 0 .4rem;
+}
+.searchTitle>div{
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: .5rem;
+    height: .6rem;
+    margin :0 .4rem;
+    display:flex;
+    align-items: center;
+}
+.searchTitle>div>input{
+    height: .5rem;
+    width: 4.2rem;    
+    outline: none;
+    border: none;
+    font-size: .26rem;
+}
+::-webkit-input-placeholder {
+    font-size: .26rem;
+    color: #c2c3c5;
+}
+.searchTitle>img:nth-of-type(2){
+    width: .42rem;
+    height: .42rem;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.mainCls>ul:nth-of-type(1){
+    display: flex;
+    justify-content: space-around;
+    font-size: .3rem;
+    height: .94rem;
+    align-items: center;
+}
+.mainCls>ul:nth-of-type(1) span{
+    padding: .28rem 0;
+}
+/* .mainCls>ul:nth-of-type(1) li:nth-of-type(1) span{
+    border-bottom :none;
+}
+.mainCls>ul:nth-of-type(1) li:nth-of-type(2) span{
+    border-bottom :#e1322d .02rem solid;
+} */
+
+.videoCls video{
+    width: 7.5rem;
+    height: 4.2rem;
+}
+.videoCls>ul{
+    display: flex;
+    font-family: SimHei;
+    align-items: center;
+    padding: .3rem .2rem;    
+}
+.videoCls>ul>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.videoCls>ul>li:nth-of-type(1){
+    flex-grow: 1;
+    font-size: .32rem;
+    align-items: left;
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+}
+.videoCls>ul>li:nth-of-type(n+2){
+    margin: 0 .3rem;
+}
+.videoCls>ul>li>img{
+    width: .34rem;
+    height: .34rem;
+}
+.videoCls>ul>li>span{
+    font-size: .18rem;
+    color: #979798;
+    margin-top: .12rem;
+}
+
+
+
+
+.marginTop{
+    margin-top: 1.4rem;
+}
+
+
+
+
+
+
+.mainFooter{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(#392816, #3c2714,#362416,#342a1e,#1e1d1b,#1c1b19,#1c1b19,#262628,#282828);
+    padding: .1rem;
+    width:100%;
+}
+.mainFooter img{
+    width: .9rem;
+    height: .8rem;
+}
+
+
+

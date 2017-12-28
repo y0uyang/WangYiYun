@@ -1,0 +1,99 @@
+.leftMargin{
+    padding-left: .2rem;
+}
+.playedMusicCls .header{
+    display: flex;
+    align-items: center;
+    background-color: #d43c33;
+    width: 6.82rem;
+    padding:.34rem;
+}
+.playedMusicCls .header>span{
+    flex-grow: 1;
+    font-family: SimHei;
+    font-size: .32rem;
+    color:#fff;
+    text-align: center;
+}
+
+.playedMusicCls .header>img:nth-of-type(1){
+    width: .44rem;
+    height: .44rem;
+}
+
+.playedMusicCls .header>img:nth-of-type(2){
+    width: .42rem;
+    height: .42rem;
+}
+
+.playedTotalMusic{
+    display: flex;
+    align-items: center;
+    padding: .22rem .22rem .22rem 0;
+    border-bottom: .01rem solid #cdced0;
+}
+.playedTotalMusic>span:nth-of-type(1){
+    font-size: .34rem;
+    margin-left: .1rem;
+}
+.playedTotalMusic>span:nth-of-type(2){
+    font-size: .28rem;
+    color: #8c8d8f;
+    flex-grow: 1;
+    margin-left: .08rem;
+}
+.playedTotalMusic>span:nth-of-type(3){
+    font-size: .28rem;
+    margin-left: .08rem;
+}
+.playedTotalMusic>img:nth-of-type(1){
+    width: .4rem;
+    height: .4rem;
+}
+.playedTotalMusic>img:nth-of-type(2){
+    width: .27rem;
+    height: .24rem;
+}
+
+.perMusic{
+    display: flex;
+    align-items: center;
+    padding:  .22rem .22rem .22rem 0;
+    border-bottom: .01rem solid #cdced0;
+}
+.perMusic>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding-left:.06rem; 
+}
+.perMusic>div>span{
+    font-size: .3rem;
+    font-family: SimHei;
+    margin-bottom: .04rem;
+}
+.perMusic>div>div{
+    color: #7f8082;
+    font-size: .24rem;
+}
+.perMusic>img{
+    width: .39rem;
+    height: .32rem;
+}
+
+
+.clearAll{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #8c8d8f;
+    font-size: .28rem;
+    padding:  .22rem .22rem .22rem 0;
+    border-bottom: .01rem solid #cdced0;
+}
+.clearAll>img{
+    width: .3rem;
+    height: .34rem;
+    margin-right: .1rem;
+}

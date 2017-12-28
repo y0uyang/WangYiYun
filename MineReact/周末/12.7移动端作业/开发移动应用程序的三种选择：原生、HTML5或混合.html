@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>开发移动应用程序的三种选择：原生、HTML5或混合 - 51CTO.COM</title>
+    <meta name="description" content="屏幕那么小，应用程序那么大，我们所知道的生活再度颠倒了过来。在如今越来越社交化、开放化的环境下，移动应用程序扮演着至关重要的角色，而且将重心由互联网端应用程序转向移动设备端应用程序。移动应用程序不再是可有可无，而是必不可少。你需要一款移动应用程序，但又该从哪里入手呢？"/>
+    <meta name="keywords" content="移动应用,原生,混合,HTML5"/>
+    <base target="_blank" />
+    <link rel="stylesheet" type="text/css" href="http://static4.51cto.com/51cto/cms/2016/css/article_head.css?v=0.1"/>
+    <link rel="stylesheet" type="text/css" href="http://static1.51cto.com/51cto/cms/2016/css/article_layout.css?v=2.17"/>
+    <script type="text/javascript" src="http://static1.51cto.com/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://static2.51cto.com//51cto/cms/bdtj/mobile.js"></script>
+</head>
+<body >
+<!-- 导航 开始-->
+<!-- top start -->
+<div class="home-top" id="topx">
+    <div class="w1001 cent">
+        <div class="pdr10 fl">中国领先的IT技术网站</div>
+        <div class="pdr10 fl">|</div>
+        <div class="pdr10 fl">
+            <div class="subweb"><span class="trans">51CTO旗下网站</span><i></i>
+                <!--旗下网站-->
+                <div class="subweb-list">
+                    <a href="http://www.51cto.com" target="_blank">51CTO.com</a>
+                    <a href="http://cio.51cto.com" target="_blank">CIOage.com</a>
+                    <a href="http://www.watchstor.com" target="_blank">WatchStor.com</a>
+                    <a href="http://www.hc3i.cn" target="_blank">HC3i.cn</a>
+                </div>
+                <!--旗下网站-->
+            </div>
+        </div>
+        <div class="pdr10 fl">|</div>
+        <div class="pdr10 fl"><a href="http://www.51cto.com/about/map.htm" target="_blank">地图</a></div>
+        <div class="top-r">
+        <div id="login_status" style="text-align:right;" class="login"> </div>
+        </div>
+    </div>
+</div>
+<!-- top end -->
+<!-- 导航 结束-->
+
+<!-- 频道导航 -->
+<div class="top_bg">
+	<div class="wrap">
+		<div id="tonglanad" class="left"></div>
+		<div id="list4" class="right" style="position:relative;">
+			<ul>
+				<li id="wordlinkad1"></li>
+				<li id="wordlinkad2"></li>
+				<li id="wordlinkad3"></li>
+				<li id="wordlinkad4"></li>
+			</ul>
+			<div style="right: 0px; width: 24px; height: 14px; z-index: 12; position: absolute; background: transparent url('http://s5.51cto.com/wyfs02/M00/86/BB/wKiom1fI4nWStYqXAAAEoZQn6vs942.png') repeat scroll 0% 0%; bottom: 2px;"></div>
+		</div>
+	</div>
+	<div class="nav">
+		<a href="http://www.51cto.com" class="logo"><img src="http://static3.51cto.com/51cto/cms/2016/images/nr_logo.png?v=0.1" alt=""></a>
+		<ul>
+			<li><a href="http://mobile.51cto.com/" class="active">移动开发</a></li>
+			<li><a href="http://mobile.51cto.com/">首页</a></li>
+			<li><a href="http://mobile.51cto.com/news/">业界资讯</a></li>
+			<li><a href="http://mobile.51cto.com/app-show/">移动应用</a></li>
+			<li><a href="http://mobile.51cto.com/dev">平台技术</a></li>
+			<li><a href="http://mobile.51cto.com/speclist/">专题</a></li>
+		</ul>
+		<div class="nav-rsear">
+			<form method="post" action="http://www.51cto.com/php/search.php" name="searchform" target="_blank">
+				<input name="keyword" id="q" type="text" placeholder="输入您要搜索的内容" class="sear-1">
+				<input name="" type="submit" value="" class="sear-2">
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- 频道导航结束 -->
+
+<div class="main">
+    <!-- 左侧内容 -->
+    <div class="main_left">
+        <div class="wznr">
+            <h2>开发移动应用程序的三种选择：原生、HTML5或混合</h2>
+            <p>屏幕那么小，应用程序那么大，我们所知道的生活再度颠倒了过来。在如今越来越社交化、开放化的环境下，移动应用程序扮演着至关重要的角色，而且将重心由互联网端应用程序转向移动设备端应用程序。移动应用程序不再是可有可无，而是必不可少。你需要一款移动应用程序，但又该从哪里入手呢？</p>
+            <dl>
+                <dt><span>作者：布加迪编译</span><span>来源：51CTO译文</span>|<em>2015-01-12 09:52</em></dt>
+                <dd>
+                	<div class="left" style="padding-right: 10px">
+                		<a href="javascript:favorBox('open');" title="一键收藏，随时查看，分享好友！" target="_self" class="bds_more1">&nbsp;收藏</a>
+                	</div>
+					<div class="bdsharebuttonbox left" data-tag="share_2">
+						<a href="javascript:;" class="bds_more" data-cmd="more">&nbsp;&nbsp;分享</a>
+					</div>
+                </dd>
+            </dl>
+        </div>
+        <div class="zwnr">
+            <h2><a href="http://mdsa.51cto.com/act/TechNeo/TechNeo16" target="_blank" style="text-decoration:none;">沙龙活动 | 去哪儿、陌陌、ThoughtWorks在自动化运维中的实践！10.28不见不散！</a></h2><br/>
+            <p>【51CTO译文】屏幕那么小，应用程序那么大，我们所知道的生活再度颠倒了过来。在如今越来越社交化、开放化的环境下，移动应用程序扮演着至关重要的角色，而且将重心由互联网端应用程序转向移动设备端应用程序。移动应用程序不再是可有可无，而是必不可少。你需要一款移动应用程序，但又该从哪里入手呢？</p>
+<p>许多因素在你的移动战略中发挥作用，比如工作团队的开发技能、所需的设备功能以及安全、离线功能和互操作性的重要性等等，这些因素必须统统考虑进来。最后，这不只是你的应用程序会有什么样的功能，而是如何才能开发出成功的应用程序。</p>
+<p>与姑娘一样，你可能需要在几张床上试躺一下，看看床是太软还是太硬，之后才能找到那张合适的床。而有时候根本就没有称心如意的选择。每种开发场景都有其优缺点，那些场景可能适合你的开发工具，也可能不适合。本文的初衷就是帮助你顺利找到一种适合自己的方法来开发移动应用程序。</p>
+<p>虽然本文总体上探讨的是移动应用程序开发，但具体来说针对期望开发与Salesforce.com、Force.com或 Database.com交互的移动应用程序的开发人员。目前，Salesforce移动SDK支持开发人员构建这三种类型的应用程序：</p>
+<p>&bull;<strong>原生应用程序</strong>：原生应用程序是某一个移动平台（比如iOS或安卓）所特有的，使用相应平台支持的开发工具和语言（比如iOS平台支持Xcode和Objective-C，安卓平台支持Eclipse和Java）。原生应用程序看起来（外观）和运行起来（性能）是最佳的。</p>
+<p>&bull;<strong>HTML5应用程序</strong>：HTML5应用程序使用标准的Web技术，通常是HTML5、JavaScript和CSS。这种只编写一次、可到处运行的移动开发方法构建的跨平台移动应用程序可以在多个设备上运行。虽然开发人员单单使用HTML5和JavaScript就能构建功能复杂的应用程序，但截至本文截稿时仍然存在一些重大的局限性，具体包括会话管理、安全离线存储以及访问原生设备功能（摄像头、日历和地理位置等）。</p>
+<p>&bull;<strong>混合应用程序</strong>：混合应用程序让开发人员可以把HTML5应用程序嵌入到一个细薄的原生容器里面，集原生应用程序和HTML5应用程序的优点（及缺点）于一体。</p>
+<p style="text-align: center;"><a target="_blank" href="http://s8.51cto.com/wyfs02/M01/58/7F/wKiom1SzKVmi4vA8AACpsslYF6g403.jpg-wh_651x-s_697089128.jpg"><img   border="0" alt="" src="http://s8.51cto.com/wyfs02/M01/58/7F/wKiom1SzKVmi4vA8AACpsslYF6g403.jpg-wh_651x-s_697089128.jpg" /></a></p>
+<p style="text-align: center;"><strong>原生移动应用程序</strong></p>
+<p>简而言之，原生应用程序提供了最佳易用性、最佳特性以及最佳总体移动体验。以下这些是只能通过原生应用程序才能实现的功能：</p>
+<p><strong>&bull;多点触控</strong>：双击、缩放及其他组合的用户界面（UI）手势。</p>
+<p><strong>&bull;快速图形API</strong>：原生平台为你提供了显示最快速的图形。如果你显示只有寥寥几个元素的静态屏幕，这个功能可能不太重要，但如果你使用大量数据，需要快速刷新，这项功能却很重要。</p>
+<p><strong>&bull;流畅动画</strong>：与快速图形API有关的是实现流畅动画的功能。这在动画、高度交互的报表或者转换照片和声音的计算密集型算法中显得尤为重要。</p>
+<p><strong>&bull;内置部件</strong>：摄像头、地址簿、地理位置及设备的其他原生功能可以无缝地整合到移动应用程序中。另一个重要的内置部件是加密的存储装置，这方面稍后会有详细介绍。</p>
+<p><strong>&bull;易于使用</strong>：原生平台是人们耳熟能详的平台，所以如果你在这个熟悉的平台上添加人们期望的所有原生功能，也就拥有了一款使用起来完全更容易的应用程序。</p>
+<p><strong>&bull;说明文档</strong>：市面上仅仅介绍iOS和安卓开发的图书就有2500多本，Stackoverflow等网站上还有不计其数的文章、博文和详细的技术帖子。</p>
+<p style="text-align: center;"><a target="_blank" href="http://s7.51cto.com/wyfs02/M00/58/7C/wKioL1SzKoqzzdDvAAB0WPedzk8602.jpg"><img   border="0" alt="" src="http://s7.51cto.com/wyfs02/M00/58/7C/wKioL1SzKoqzzdDvAAB0WPedzk8602.jpg" /></a></p>
+<p>原生应用程序通常使用集成开发环境（IDE）开发而成。IDE提供了用于构建、调试、项目管理和版本控制的工具，还提供了专业开发人员需要的其他工具。虽然iOS和安卓应用程序是使用不同的IDE和语言开发而成的，不过开发环境方面却有颇多相似之处，没有必要深入钻研两者的差异。简而言之，设备需要什么样的工具，你就使用什么工具。</p>
+<p>你之所以需要这些工具，是因为原生应用程序开发起来比较困难。同样，需要的开发经验也要比其他开发场景来得丰富；你根本不能剪贴拷贝Objective-C，就指望可行。确实，开发团队的技术专长是个重要的考量因素。如果你是名专业开发人员，恐怕早已通晓成熟可靠的API和框架、通过已构建的部件轻松实现的特效，或者将代码都放在一个地方的好处。说实话，这年头技能娴熟的原生iOS或安卓开发人员如同摇滚明星，自然可以提出摇滚明星般的要求。</p>
+<p>虽然我们从开发的角度来探讨原生应用程序，不过别忘了还有一个更重要的角度：最终用户。如果你在物色某款应用程序，可以在应用程序商店中找到。如果你开始运行应用程序，它会立即启动。如果你使用应用程序，可以获得快速的性能以及一致的平台外观感觉。如果你的应用程序需要更新，它会告诉你需要更新。原生应用程序为你提供了期望从制造你手头设备的公司获得的一切，好像应用程序的用途就是这样。</p>
+<p><strong>HTML5移动应用程序</strong></p>
+<p>如果你刚接触移动应用程序开发，那你动作确实有些晚了。不过，就基于Web的移动应用程序而言，我们仍处于早期阶段。当然，诸多浏览器在过去的好多年变得越来越好，可是底层技术却基本上没有发生太大的变化。</p>
+<p>但这可能是件好事。HTML5移动应用程序大致上来说就是个网页或一系列网页，旨在可以在尺寸极小的屏幕上打开。因此，HTML5应用程序与设备无关，可以用任何一种现代的移动浏览器来打开。又由于你的内容放在网上，它易于搜索，这可能是个巨大的好处，具体就要看应用程序的性质了（比如购物类应用程序）。</p>
+<p style="text-align: center;"><a target="_blank" href="http://s3.51cto.com/wyfs02/M01/58/7C/wKioL1SzKq2ifMDgAACAzH27nYg563.jpg"><img   border="0" alt="" src="http://s3.51cto.com/wyfs02/M01/58/7C/wKioL1SzKq2ifMDgAACAzH27nYg563.jpg" /></a></p>
+<p>如果你开发过Web应用程序，自然也会喜欢上HTML5，用起来会如鱼得水。如果你刚接触Web开发，技术门槛比较低；相比原生开发或混合开发，它更容易上手。遗憾的是，每种移动设备对于可用屏幕尺寸和分辨率似乎都有各自的认识和理解，所以另外多了一种负担：在不同的设备上进行测试。浏览器不兼容问题在安卓设备上来得尤其常见，所以浏览器方面要小心。</p>
+<p>&ldquo;只要编写一次、可到处运行&rdquo;的HTML5方法的一个重要部分是，就原生应用程序而言，分发和支持要容易得多。需要开发修正版或添加功能特性？完成后可以为所有用户统一部署。就原生应用程序而言，开发和测试周期比较长，之后消费者通常必须登录到商店、下载新版本，才能获得最新修正版。</p>
+<p>在过去的一年，HTML5已全然成为一种非常流行的构建移动应用程序的方式。现在市面上有多种UI框架，可以解决开发人员都不想再次面对的一些最复杂的问题。iScroll在模拟快速滚动方面做得非常出色。JQuery Mobile和Sencha Touch提供了优雅精致的移动组件，插件即便没有数千个，至少也有数百个，它们提供了从轮播到超复杂控件的各种特性。</p>
+<p>所以，既然HTML5应用程序开发更容易、支持更容易，覆盖最广泛的设备种类，那么这些应用程序又输在哪里呢？我们已经探讨了原生开发的主要好处，所以我们只重申一点：你无法访问设备上的原生部件。用户也无法获得原生应用程序那样熟悉的外观感觉，也无法使用熟悉的组合手势。不过各方面在取得长足进展，浏览器一直在支持越来越多的功能。</p>
+<p>最新一批浏览器支持硬件加速的CSS3动画特性，为滑动面板提供了流畅动画效果，还提供了屏幕之间的转场效果，不过即便如此，还是无法与原生应用程序的功能和灵活性相提并论。如今，根本不可能捕获多点触控输入事件（确定何时多个手指在屏幕上），也不可能使用悬浮、然后落到正确位置的侧滑按钮和照片来获得路径风格的那种优雅精致。</p>
+<p>不过，重大局限性在于离线存储和安全，对企业移动应用程序来说更是如此。虽然你可以通过将文件缓存在设备上，貌似实现离线功能，但这根本不是一种很好的解决办法。虽然底层数据库可能经过加密，但是其不如用开发者证书保护每个应用程序的原生钥匙链加密方法来得充分分隔。此外，如果从桌面端启动带验证机制的Web应用程序，每当应用程序被发送到后台，它都需要用户输入登录凭据。这对用户来说是个糟糕的体验。通常来说，在原生平台上实现哪怕微不足道的安全措施对Web移动开发人员来说也是很复杂的任务。因此，要是安全至关重要，这个因素可能会决定你选择哪一种移动技术。</p>
+<p><strong>混合移动应用程序</strong></p>
+<p>混合开发集原生和HTML5两者的优点（及缺点）。我们定义的混合应用程序是一种Web应用程序，主要使用HTML5和JavaScript构建而成，然后封装在细薄的原生容器里面，可通过容器来访问原生平台功能。PhoneGap是最流行的构建混合移动应用程序的容器。</p>
+<p>总的来说，混合应用程序集两者之所长。如果现有的Web开发人员在优化JavaScript，处理CSS从而设计漂亮布局以及编写可在任何平台上运行的兼容HTML代码方面已成为行家里手，现在就能构建功能复杂的移动应用程序，并不牺牲很酷的原生功能。在某些情况下，原生应用程序开发人员可以为图像处理之类的任务编写插件，但在这种情况下，很多问题隐藏在细节中。</p>
+<p>在iOS上，嵌入式Web浏览器或UIWebView与Safari浏览器不一样。虽然区别不大，但它们会在调试时带来棘手问题。这就是为什么有必要使用克服了所有局限性的流行框架。</p>
+<p style="text-align: center;"><a target="_blank" href="http://s5.51cto.com/wyfs02/M01/58/7F/wKiom1SzKgjTXyXPAAC1VTuA_Fw629.jpg-wh_600x-s_3900617453.jpg"><img   border="0" alt="" src="http://s5.51cto.com/wyfs02/M01/58/7F/wKiom1SzKgjTXyXPAAC1VTuA_Fw629.jpg-wh_600x-s_3900617453.jpg" /></a></p>
+<p>你知道，原生应用程序安装在设备上，而HTML5应用程序驻留在Web服务器上，所以你可能会想：混合应用程序将其文件存储在设备上还是存储在服务器上？没错，实际上有两种方式来部署混合应用程序。</p>
+<p><strong>&bull;本地</strong>：你可以将HTML和JavaScript代码包装成移动应用程序二进制代码，采用类似原生应用程序结构的方式。在这种场景下，你使用REST API，在设备和云端之间来回转移数据。</p>
+<p><strong>&bull;服务器</strong>：另外，你可以从服务器来部署标准的Web应用程序（可采用可选的缓存机制，以提高性能），只要将容器用作UIWebview上面那层细薄的外壳。</p>
+<p>Netflix有一款很酷的应用程序，它使用了一样的代码库以便在所有设备上运行UI：平板电脑、手机、智能电视、DVD播放机、冰箱和汽车。虽然大多数人不知道该应用程序是如何部署的，也并不关心，但下面这一点很吸引你：他们可以迅速更改界面，或者进行A/B测试，确定最佳的用户交互。视频解码和流式传送这些基本工作交给了原生层，以获得最佳性能，所以这是一款运行快速、看似原生的应用程序，确确实实集两者之众长。</p>
+<p><strong>结束语</strong></p>
+<p>移动开发领域在不断变化。每过半年，就会出现一种新的移动操作系统，其独特的功能特性只有通过原生API才能访问。之后不久，容器将那些功能特性引入到混合应用程序，而互联网每过几年就会迎来巨大飞越。基于目前的技术，本文中介绍的其中一种开发场景势必会适合你的要求。不妨用下面这张表对此作一个总结：</p>
+<table cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr>
+            <td>
+            
+            </td>
+            <td>
+            <p>原生</p>
+            </td>
+            <td>
+            <p>HTML5</p>
+            </td>
+            <td>
+            <p>混合</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>应用程序特性</p>
+            </td>
+            <td colspan="3">
+            
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>图形</p>
+            </td>
+            <td>
+            <p>原生API</p>
+            </td>
+            <td>
+            <p>HTML、Canvas和SVG</p>
+            </td>
+            <td>
+            <p>HTML、Canvas和SVG</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>性能</p>
+            </td>
+            <td>
+            <p>快速</p>
+            </td>
+            <td>
+            <p>慢速</p>
+            </td>
+            <td>
+            <p>慢速</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>原生外观和感觉</p>
+            </td>
+            <td>
+            <p>原生</p>
+            </td>
+            <td>
+            <p>模拟</p>
+            </td>
+            <td>
+            <p>模拟</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>分发</p>
+            </td>
+            <td>
+            <p>应用程序商店</p>
+            </td>
+            <td>
+            <p>Web</p>
+            </td>
+            <td>
+            <p>应用程序商店</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>设备访问</p>
+            </td>
+            <td colspan="3">
+            
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>摄像头</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+            <td>
+            <p>无</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>通知</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+            <td>
+            <p>无</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>联系人和日历</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+            <td>
+            <p>无</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>离线存储</p>
+            </td>
+            <td>
+            <p>安全的文件存储</p>
+            </td>
+            <td>
+            <p>共享式SQL</p>
+            </td>
+            <td>
+            <p>安全的文件系统和共享式SQL</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>地理位置</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>手势</p>
+            </td>
+            <td colspan="3">
+            
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>滑动</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>缩放</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+            <td>
+            <p>无</p>
+            </td>
+            <td>
+            <p>有</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>连接</p>
+            </td>
+            <td>
+            <p>在线和离线</p>
+            </td>
+            <td>
+            <p>主要是在线</p>
+            </td>
+            <td>
+            <p>在线和离线</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p>开发技能</p>
+            </td>
+            <td>
+            <p>ObjectiveC和Java</p>
+            </td>
+            <td>
+            <p>HTML5、CSS和JavaScript</p>
+            </td>
+            <td>
+            <p>HTML5、CSS和JavaScript</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>英文原文：<a href="https://developer.salesforce.com/page/Native,_HTML5,_or_Hybrid:_Understanding_Your_Mobile_Application_Development_Options" target="_blank">https://developer.salesforce.com/page/Native,_HTML5,_or_Hybrid:_Understanding_Your_Mobile_Application_Development_Options</a></p>
+<p>布加迪编译</p>
+<p>【编辑推荐】</p>
+<div>
+<ol>
+    <li><a target="_blank" href="http://mdsa.51cto.com/art/201412/460529.htm">移动混合应用Hybrid App开发实战</a></li>
+    <li><a target="_blank" href="http://mdsa.51cto.com/art/201412/462034.htm">DHH 谈混合移动应用开发</a></li>
+    <li><a target="_blank" href="http://mobile.51cto.com/web-463021.htm">HTML5性能不输原生app，用拼积木方式做HTML5产品</a></li>
+    <li><a target="_blank" href="http://mobile.51cto.com/aengine-463132.htm">跨平台开发移动应用程序的五大工具</a></li>
+    <li><a target="_blank" href="http://mobile.51cto.com/informatization-463156.htm">MBaaS深度评测：构建移动应用程序的五朵云</a></li>
+</ol>
+</div>
+<div align="right">【责任编辑：<a href="mailto:yanjm@51cto.com" class="ln">闫佳明</a> TEL：（010）68476606】</div><br>
+            <a href="###" class="dzdz zhan" target="_self">点赞 <span>0</span></a>
+        </div>
+        <div class="share5">
+            <ul>
+                <li><a href='http://www.51cto.com/php/search.php?keyword=%D2%C6%B6%AF%D3%A6%D3%C3' target='_blank' class='underline'>移动应用</a>&nbsp;&nbsp;<a href='http://www.51cto.com/php/search.php?keyword=%D4%AD%C9%FA' target='_blank' class='underline'>原生</a>&nbsp;&nbsp;<a href='http://www.51cto.com/php/search.php?keyword=%BB%EC%BA%CF' target='_blank' class='underline'>混合</a>&nbsp;&nbsp;<a href='http://www.51cto.com/php/search.php?keyword=HTML5' target='_blank' class='underline'>HTML5</a></li>
+            </ul>
+            <dl>
+                <dt><em>分享:</em>
+<div class="bdsharebuttonbox" data-tag="share_1">
+    <a class="wb" data-cmd="tsina"></a>
+    <a class="wx" data-cmd="weixin"></a>
+    <a class="more" data-cmd="more"></a>
+</div>
+</dt>
+<script type="text/javascript">
+    window._bd_share_config = {
+        common : {
+            bdText : document.title
+        },
+        share : [{
+            "bdSize" : 16,
+        }]
+    }
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<!-- Baidu Button END -->
+            </dl>
+        </div>
+        <div class="nrdp comment">
+            <div class='comment center'>
+	<div class='inner center' id="cmscmt_iframe"></div>
+</div>
+<script type="text/javascript" id="UYScript" src="http://comment.51cto.com/static/js/api_js/iframe_cmt.js" async=""></script>
+
+        </div>
+        <div class="dzk">
+            <dl><dt class="show">大家都在看</dt><dt>猜你喜欢</dt></dl>
+            <div>
+                <ul>
+                    <li class="show">
+                        <div class="djdzk" id="djdzk">
+                        </div>
+                    </li>
+                    <li>
+                       <div class="djdzk" id="cnxh"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 文章左侧结束 -->
+    <!-- 文章右侧 -->
+    <div class="wrap_right">
+        <div><!-- intel广告位 -->
+
+<span class="mtgg" id="right1_ad" style="height:auto; width:300px;margin-bottom: 10px;">
+
+<script type="text/javascript">
+var s=window.location.toString();
+var s1=s.substr(7,s.length);
+var s2=s1.indexOf(".");
+s=s.substr(7,s2);
+if ( s == 'stor') {
+    var m3_u = (location.protocol=='https:'?'https://gg.51cto.com/www/delivery/ajs.php':'http://gg1.51cto.com/www/delivery/ajs.php');
+    var m3_r = Math.floor(Math.random()*99999999999);
+    if (!document.MAX_used) document.MAX_used = ',';
+    document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+    document.write ("?zoneid=987");
+    document.write ('&amp;cb=' + m3_r);
+    if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+    document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+    document.write ("&amp;loc=" + escape(window.location));
+    if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+    if (document.context) document.write ("&context=" + escape(document.context));
+    if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+    document.write ("'><\/scr"+"ipt>");
+
+}else if (s == 'server'){
+    var m3_u = (location.protocol=='https:'?'https://gg.51cto.com/www/delivery/ajs.php':'http://gg1.51cto.com/www/delivery/ajs.php');
+    var m3_r = Math.floor(Math.random()*99999999999);
+    if (!document.MAX_used) document.MAX_used = ',';
+    document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+    document.write ("?zoneid=986");
+    document.write ('&amp;cb=' + m3_r);
+    if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+    document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+    document.write ("&amp;loc=" + escape(window.location));
+    if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+    if (document.context) document.write ("&context=" + escape(document.context));
+    if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+    document.write ("'><\/scr"+"ipt>");
+
+}else if(s == 'network'){
+    var m3_u = (location.protocol=='https:'?'https://gg.51cto.com/www/delivery/ajs.php':'http://gg1.51cto.com/www/delivery/ajs.php');
+    var m3_r = Math.floor(Math.random()*99999999999);
+    if (!document.MAX_used) document.MAX_used = ',';
+    document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+    document.write ("?zoneid=985");
+    document.write ('&amp;cb=' + m3_r);
+    if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+    document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+    document.write ("&amp;loc=" + escape(window.location));
+    if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+    if (document.context) document.write ("&context=" + escape(document.context));
+    if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+    document.write ("'><\/scr"+"ipt>");
+
+//    var str = '<div class="m30" style="position:relative;">';
+//    str += '<iframe src="http://network.51cto.com/act/cisco/art201709" scrolling="no" frameborder="0" sytle="" width="300" align="middle" height="360" target ="_parent"></iframe>';
+//    str +='<div style="left: 0px; width: 24px; height: 14px; z-index: 12; position: absolute; background: transparent url(http://s5.51cto.com/wyfs02/M00/86/BB/wKiom1fI4nWStYqXAAAEoZQn6vs942.png)repeat scroll 0% 0%; bottom: 2px;"></div>';
+//    str	+= '</div>';
+//    $('#right1_ad').html(str);
+}
+// var timestamp = Date.parse(new Date());
+//timestamp = timestamp / 1000;
+    if (s == 'cloud') {
+//    var str = "<ins class='dcmads' style='display:inline-block;width:300px;height:360px' data-dcm-placement='N5751.51CTO/B11527656.153459357' data-dcm-rendering-mode='script' data-dcm-http-only data-dcm-app-id=''></ins>";
+//
+//        $('#right1_ad').html(str);
+        //1496592000
+        var m3_u = (location.protocol=='https:'?'https://gg.51cto.com/www/delivery/ajs.php':'http://gg3.51cto.com/www/delivery/ajs.php');
+        var m3_r = Math.floor(Math.random()*99999999999);
+        if (!document.MAX_used) document.MAX_used = ',';
+        document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+        document.write ("?zoneid=969");
+        document.write ('&amp;cb=' + m3_r);
+        if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+        document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+        document.write ("&amp;loc=" + escape(window.location));
+        if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+        if (document.context) document.write ("&context=" + escape(document.context));
+        if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+        document.write ("'><\/scr"+"ipt>");
+    }
+    if (s == 'bigdata') {
+        var m3_u = (location.protocol=='https:'?'https://gg.51cto.com/www/delivery/ajs.php':'http://gg2.51cto.com/www/delivery/ajs.php');
+        var m3_r = Math.floor(Math.random()*99999999999);
+        if (!document.MAX_used) document.MAX_used = ',';
+        document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+        document.write ("?zoneid=970");
+        document.write ('&amp;cb=' + m3_r);
+        if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+        document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+        document.write ("&amp;loc=" + escape(window.location));
+        if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+        if (document.context) document.write ("&context=" + escape(document.context));
+        if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+        document.write ("'><\/scr"+"ipt>");
+    }
+//var timestamp = Date.parse(new Date());
+//timestamp = timestamp / 1000;
+//    if(s == 'netsecurity'&& (timestamp >= 1506182400)){
+//        var str = '<div class="m30" style="position:relative;">';
+//    str += '<iframe src="http://netsecurity.51cto.com/act/cisco/art201709" scrolling="no" frameborder="0" sytle="" width="300" align="middle" height="360" target ="_parent"></iframe>';
+//    str +='<div style="left: 0px; width: 24px; height: 14px; z-index: 12; position: absolute; background: transparent url(http://s5.51cto.com/wyfs02/M00/86/BB/wKiom1fI4nWStYqXAAAEoZQn6vs942.png)repeat scroll 0% 0%; bottom: 2px;"></div>';
+//    str	+= '</div>';
+//    $('#right1_ad').html(str);
+//    }
+</script>
+    <script src='http://www.googletagservices.com/dcm/dcmads.js'></script>
+    </span></div>
+        <div class="mtgg m30"><script type="text/javascript" src="http://image.51cto.com/ad/art/hzh/ad.js"></script></div>
+        <div><!--
+<script>
+    var s = window.location.href.toString();
+    var a = s.split('/');
+    var d = a[2];
+    var b = a[5].split('.');
+    var c = b[0];
+
+    if (d == 'cloud.51cto.com' && c > 600000) {
+        var str = "<ins class='dcmads' style='display:inline-block;width:300px;height:360px' data-dcm-placement='N5751.51CTO/B11527656.202054721' data-dcm-rendering-mode='iframe' data-dcm-http-only data-dcm-app-id=''></ins>";
+        document.write(str);
+    }
+
+    if (d == 'bigdata.51cto.com' && c > 600000) {
+        var str = "<ins class='dcmads' style='display:inline-block;width:300px;height:360px' data-dcm-placement='N5751.51CTO/B11527232.153474027' data-dcm-rendering-mode='iframe' data-dcm-http-only data-dcm-app-id=''> </ins>";
+        document.write(str);
+    }
+
+</script>
+<script src='http://www.googletagservices.com/dcm/dcmads.js'></script> -->
+</div>
+        <div class="bjtj m30">
+            <h2><span>编辑推荐</span></h2>
+            <dl><dt>聚焦</dt><dd><a href="http://mobile.51cto.com/ahot-554171.htm" title="安卓AOP三剑客之Android APT技术浅谈">安卓AOP三剑客之Android APT技术浅谈</a></dd></dl><dl><dt>热点</dt><dd><a href="http://mobile.51cto.com/app-show-554286.htm" title="迅雷无法下载怎办？老司机教你轻松解决">迅雷无法下载怎办？老司机教你轻松解决</a></dd></dl><dl><dt>关注</dt><dd><a href="http://mobile.51cto.com/app-show-554184.htm" title="推荐几款好用的Linux电子书阅读器（上）">推荐几款好用的Linux电子书阅读器（上）</a></dd></dl><dl><dt>关注</dt><dd><a href="http://mobile.51cto.com/anews-553493.htm" title="安卓10岁了：这些消失的经典App你还记得吗？">安卓10岁了：这些消失的经典App你还记得吗？</a></dd></dl><dl><dt>热点</dt><dd><a href="http://mobile.51cto.com/news-553449.htm" title="十一长假，必“卸载”的10+个App">十一长假，必“卸载”的10+个App</a></dd></dl>
+        </div>
+        <div></div>
+        <div class="news m30">
+            <dl><dt class="show">24H热文</dt><dt>一周话题</dt><dt>本月最赞</dt></dl>
+            <ul><li class="show"><a href=http://news.51cto.com/art/201710/554434.htm title=态牛-Tech Neo 9月刊：基于算法的IT运维>态牛-Tech Neo 9月刊：基于算法的IT运维</a><a href=http://mobile.51cto.com/aprogram-442833.htm title=Android开发中Handler的经典总结>Android开发中Handler的经典总结</a><a href=http://mobile.51cto.com/web-463667.htm title=开发移动应用程序的三种选择：原生、HTML5或混合>开发移动应用程序的三种选择：原生、HTML5或混合</a><a href=http://mobile.51cto.com/aprogram-464015.htm title=Android 反编译 -smali语法>Android 反编译 -smali语法</a><a href=http://developer.51cto.com/art/201709/550933.htm title=2017年9月编程语言排行榜：Java、C与C++三巨头还能统治排行榜多久？>2017年9月编程语言排行榜：Java、C与C++三巨头还能统治排行榜多久？</a><a href=http://news.51cto.com/art/201710/554747.htm title=不需要写代码也能帮助你开发App的七大神器>不需要写代码也能帮助你开发App的七大神器</a><a href=http://mobile.51cto.com/abased-386212.htm title=App工程结构搭建：几种常见Android代码架构分析>App工程结构搭建：几种常见Android代码架构分析</a><a href=http://mobile.51cto.com/aprogram-434525.htm title=Android NDK开发，没有你想象的那么难>Android NDK开发，没有你想象的那么难</a></li><li><a href=http://news.51cto.com/art/201710/554434.htm title=态牛-Tech Neo 9月刊：基于算法的IT运维>态牛-Tech Neo 9月刊：基于算法的IT运维</a><a href=http://mobile.51cto.com/aprogram-442833.htm title=Android开发中Handler的经典总结>Android开发中Handler的经典总结</a><a href=http://mobile.51cto.com/web-463667.htm title=开发移动应用程序的三种选择：原生、HTML5或混合>开发移动应用程序的三种选择：原生、HTML5或混合</a><a href=http://mobile.51cto.com/aprogram-434525.htm title=Android NDK开发，没有你想象的那么难>Android NDK开发，没有你想象的那么难</a><a href=http://developer.51cto.com/art/201709/550933.htm title=2017年9月编程语言排行榜：Java、C与C++三巨头还能统治排行榜多久？>2017年9月编程语言排行榜：Java、C与C++三巨头还能统治排行榜多久？</a><a href=http://mobile.51cto.com/abased-386212.htm title=App工程结构搭建：几种常见Android代码架构分析>App工程结构搭建：几种常见Android代码架构分析</a><a href=http://mobile.51cto.com/aprogram-464015.htm title=Android 反编译 -smali语法>Android 反编译 -smali语法</a><a href=http://mobile.51cto.com/ahot-409516.htm title=手机web——自适应网页设计（html/css控制）>手机web——自适应网页设计（html/css控制）</a></li><li><a href=http://mobile.51cto.com/aprogram-442833.htm title=Android开发中Handler的经典总结>Android开发中Handler的经典总结</a><a href=http://mobile.51cto.com/web-463667.htm title=开发移动应用程序的三种选择：原生、HTML5或混合>开发移动应用程序的三种选择：原生、HTML5或混合</a><a href=http://developer.51cto.com/art/201709/552239.htm title=千人技术团队背后的CTO：CTO的修炼远不止于技术修炼>千人技术团队背后的CTO：CTO的修炼远不止于技术修炼</a><a href=http://mobile.51cto.com/aprogram-464015.htm title=Android 反编译 -smali语法>Android 反编译 -smali语法</a><a href=http://developer.51cto.com/art/201709/550933.htm title=2017年9月编程语言排行榜：Java、C与C++三巨头还能统治排行榜多久？>2017年9月编程语言排行榜：Java、C与C++三巨头还能统治排行榜多久？</a><a href=http://mobile.51cto.com/aprogram-434525.htm title=Android NDK开发，没有你想象的那么难>Android NDK开发，没有你想象的那么难</a><a href=http://mobile.51cto.com/abased-386212.htm title=App工程结构搭建：几种常见Android代码架构分析>App工程结构搭建：几种常见Android代码架构分析</a><a href=http://news.51cto.com/art/201710/554434.htm title=态牛-Tech Neo 9月刊：基于算法的IT运维>态牛-Tech Neo 9月刊：基于算法的IT运维</a></li></ul>
+        </div>
+        <div><div class="areaAd mt5" id="ad_1"></div>
+<div style="display:none">
+<span id="ad1">
+
+<script type='text/javascript'><!--//<![CDATA[
+var m3_u = (location.protocol=='https:'?'https://gg.51cto.com/www/delivery/ajs.php':'http://gg3.51cto.com/www/delivery/ajs.php');
+var m3_r = Math.floor(Math.random()*99999999999);
+if (!document.MAX_used) document.MAX_used = ',';
+document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+document.write ("?zoneid=693");
+document.write ('&amp;cb=' + m3_r);
+if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+document.write ("&amp;loc=" + escape(window.location));
+if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+if (document.context) document.write ("&context=" + escape(document.context));
+if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='//gg2.51cto.com/www/delivery/ck.php?n=ae95ac07&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='//gg.51cto.com/www/delivery/avw.php?zoneid=693&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=ae95ac07' border='0' alt='' /></a></noscript>
+</span>
+    </div>
+<script>
+    document.getElementById('ad_1').innerHTML = document.getElementById('ad1').innerHTML;
+</script></div>
+        <div class="spkc m30">
+            <h2><span>视频课程</span><a href="http://edu.51cto.com/">+更多</a></h2>
+            
+            <dl>
+                <dt><a href="http://edu.51cto.com/course/course_id-2422.html"><img src="https://s1.51cto.com/images/201612/5975b73843ccdcb51e5520e77a435fd703d55d_small.jpg" title="2017年软考系统分析师视频课程【综合知识】" alt="2017年软考系统分析师视频课程【综合知识】" width="100px" height="80px"></a><span></span></dt>
+                <dd>
+                    <h3><a href="http://edu.51cto.com/course/course_id-2422.html" target="_blank" title="2017年软考系统分析师视频课程【综合知识】">2017年软考系统分析师视频课程【综合知识】</a></h3>
+                    <h4><span class="fl">讲师：<em><a href="http://edu.51cto.com/lecturer/user_id-8371666.html" target="_blank">小任老师</a></em></span><span class="fr"><em>41360</em>人学习过</span></h4>
+                </dd>
+            </dl>
+            
+            <dl>
+                <dt><a href="http://edu.51cto.com/course/course_id-877.html"><img src="https://s1.51cto.com/images/201612/c66877d8299f1f71aa86346d101df13a1f2431_small.jpg" title="2017软考信息系统项目管理师-项目管理(下)考试培训视频课程" alt="2017软考信息系统项目管理师-项目管理(下)考试培训视频课程" width="100px" height="80px"></a><span></span></dt>
+                <dd>
+                    <h3><a href="http://edu.51cto.com/course/course_id-877.html" target="_blank" title="2017软考信息系统项目管理师-项目管理(下)考试培训视频课程">2017软考信息系统项目管理师-项目管理(下)考</a></h3>
+                    <h4><span class="fl">讲师：<em><a href="http://edu.51cto.com/lecturer/user_id-8371666.html" target="_blank">小任老师</a></em></span><span class="fr"><em>30240</em>人学习过</span></h4>
+                </dd>
+            </dl>
+            
+            <dl>
+                <dt><a href="http://edu.51cto.com/course/course_id-5993.html"><img src="https://s1.51cto.com/images/201605/54823421002e3481b2432949faeb1e0c2b92e7_small.jpg" title="SQLite数据库 [精讲微视频]" alt="SQLite数据库 [精讲微视频]" width="100px" height="80px"></a><span></span></dt>
+                <dd>
+                    <h3><a href="http://edu.51cto.com/course/course_id-5993.html" target="_blank" title="SQLite数据库 [精讲微视频]">SQLite数据库 [精讲微视频]</a></h3>
+                    <h4><span class="fl">讲师：<em><a href="http://edu.51cto.com/lecturer/user_id-9166337.html" target="_blank">大头娃</a></em></span><span class="fr"><em>17520</em>人学习过</span></h4>
+                </dd>
+            </dl>
+            
+        </div>
+        <div></div>
+        <div></div>
+        <div class="zxzt m30">
+            <h2><span>最新专题</span><a href="http://mobile.51cto.com/col/1606/spec1.htm">+更多</a></h2>
+            <dl>
+                <dt><a href="http://mobile.51cto.com/iphone-536126.htm" title="产品不行技术来撑，看苹果如何打响技术战"><img src="http://s5.51cto.com/wyfs02/M00/8F/71/wKioL1jeeJSTe6sTAAXOKS1hfG8593.jpg-wh_100x70-s_3110565891.jpg" alt="产品不行技术来撑，看苹果如何打响技术战" title="产品不行技术来撑，看苹果如何打响技术战"></a></dt>
+                <dd>
+                    <a href="http://mobile.51cto.com/iphone-536126.htm" title="产品不行技术来撑，看苹果如何打响技术战">产品不行技术来撑，看苹果如何打响技术战</a>
+                    <h3><a href='http://www.51cto.com/php/search.php?keyword=%B2%FA%C6%B7'>产品</a></h3>
+                </dd>
+            </dl><dl>
+                <dt><a href="http://mobile.51cto.com/mobile-533097.htm" title="不谈架构谈应用！开源时代你将如何“起飞”？"><img src="http://s2.51cto.com/wyfs02/M02/8E/14/wKiom1i1FIeTMfrpAADh7TDbdVA082.jpg-wh_100x70-s_4273819645.jpg" alt="不谈架构谈应用！开源时代你将如何“起飞”？" title="不谈架构谈应用！开源时代你将如何“起飞”？"></a></dt>
+                <dd>
+                    <a href="http://mobile.51cto.com/mobile-533097.htm" title="不谈架构谈应用！开源时代你将如何“起飞”？">不谈架构谈应用！开源时代你将如何“起飞”？</a>
+                    <h3><a href='http://www.51cto.com/php/search.php?keyword=%D2%C6%B6%AF'>移动</a></h3>
+                </dd>
+            </dl><dl>
+                <dt><a href="http://mobile.51cto.com/anews-528454.htm" title="基于React与Vue后，移动开源项目Weex如何定义未来"><img src="http://s1.51cto.com/wyfs02/M01/8C/EB/wKioL1h-AOOzMAFkAAANEa-Gu6w358.jpg-wh_100x70-s_2912020025.jpg" alt="基于React与Vue后，移动开源项目Weex如何定义未来" title="基于React与Vue后，移动开源项目Weex如何定义未来"></a></dt>
+                <dd>
+                    <a href="http://mobile.51cto.com/anews-528454.htm" title="基于React与Vue后，移动开源项目Weex如何定义未来">基于React与Vue后，移动开源项目Weex如何定义未来</a>
+                    <h3><a href='http://www.51cto.com/php/search.php?keyword=React'>React</a></h3>
+                </dd>
+            </dl><dl>
+                <dt><a href="http://mobile.51cto.com/mobile-528316.htm" title="看看16年,移动开发都发生了什么"><img src="http://s2.51cto.com/wyfs02/M02/8C/89/wKioL1hvYonRGkr-AABUcRgjHeo923.jpg-wh_100x70-s_4121701693.jpg" alt="看看16年,移动开发都发生了什么" title="看看16年,移动开发都发生了什么"></a></dt>
+                <dd>
+                    <a href="http://mobile.51cto.com/mobile-528316.htm" title="看看16年,移动开发都发生了什么">看看16年,移动开发都发生了什么</a>
+                    <h3><a href='http://www.51cto.com/php/search.php?keyword=%D2%C6%B6%AF'>移动</a></h3>
+                </dd>
+            </dl>
+        </div>
+        <div></div>
+        <div id="jcpl"></div>
+        <div></div>
+        <div class="news m30">
+            <dl><dt class="show">精选博文</dt><dt>论坛热帖</dt><dt>下载排行</dt></dl>
+            <div>
+                <ul>
+                    <li class="show">
+                        <a href="http://lidongni.blog.51cto.com/2554605/462780/" target="_blank" title="ERP实施实记(六)之生管课">ERP实施实记(六)之生管课</a><a href="http://ticktick.blog.51cto.com/823160/462746/" target="_blank" title="为什么要使用RTP">为什么要使用RTP</a><a href="http://xianghehexiang.blog.51cto.com/2555793/462673/" target="_blank" title="nginx负载均衡使用心得">nginx负载均衡使用心得</a><a href="http://byteh.blog.51cto.com/141786/462658/" target="_blank" title="网游公司，请先穿上裤子再打酱油">网游公司，请先穿上裤子再打酱油</a><a href="http://wayfarer.blog.51cto.com/1300239/462523/" target="_blank" title="改造面向过程式设计">改造面向过程式设计</a>
+                    </li>
+                    <li>
+                        <a href="http://bbs.51cto.com/thread-1175788-1.html" target="_blank" title="Office 365新老、第三方邮箱邮件自动关联同步">Office 365新老、第三方邮箱邮件自动</a><a href="http://bbs.51cto.com/thread-1435503-1.html" target="_blank" title="SQL Server找出缺失的时间点">SQL Server找出缺失的时间点</a><a href="http://bbs.51cto.com/thread-1467889-1.html" target="_blank" title="Python会是下一个PHP吗？">Python会是下一个PHP吗？</a><a href="http://bbs.51cto.com/thread-1470474-1.html" target="_blank" title="致：论坛午饭的一封信">致：论坛午饭的一封信</a><a href="http://bbs.51cto.com/thread-1470732-1.html" target="_blank" title="【我眼中的自己】教师-计算机老师-打杂是主业，上课是副业">【我眼中的自己】教师-计算机老师-打</a>
+                    </li>
+                    <li>
+                        <a href="http://down.51cto.com/data/2174146/" target="_blank" title="天畅博客日志blog 天畅博客日志blog  v1_0">天畅博客日志blog 天畅博客日志blog </a><a href="http://down.51cto.com/data/2174145/" target="_blank" title="腾讯小说小偷腾讯小说小偷 v5_0 81113">腾讯小说小偷腾讯小说小偷 v5_0 8111</a><a href="http://down.51cto.com/data/2174144/" target="_blank" title="腾讯天气小偷腾讯天气小偷-">腾讯天气小偷腾讯天气小偷-</a><a href="http://down.51cto.com/data/2174143/" target="_blank" title="腾讯QQ登陆SDKASP腾讯QQ登陆SDKASP">腾讯QQ登陆SDKASP腾讯QQ登陆SDKASP</a><a href="http://down.51cto.com/data/2174142/" target="_blank" title="腾林易点书屋腾林易点书屋 v1_0">腾林易点书屋腾林易点书屋 v1_0</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div></div>
+        <div class="ds m30">
+            <h2><span>读 书 </span><a href="http://book.51cto.com/">+更多</a></h2>
+            <dl>
+                
+                <dt><a href="http://book.51cto.com/art/200704/44879.htm" title="程序员教程（第2版）"><img src="http://images.51cto.com/files/uploadimg/20070407/163143793.jpg" width="98px" height="144px"/></a></dt>
+                <dd><h3><a href="http://book.51cto.com/art/200704/44879.htm" title="程序员教程（第2版）">程序员教程（第2版）</a></h3>
+                    本书按照人事部、信息产业部全国计算机技术与软件专业技术资格（水平）考试程序员考试大纲编写，是对2004版的修订版，内容包括计算机系统、...
+                </dd>
+                
+            </dl>
+        </div>
+        <div></div>
+        <div class="dydy">
+            <dl>
+                <dt><img src="http://static1.51cto.com/51cto/cms/2016/images/dydy.jpg" alt=""></dt>
+                <dd>
+                    <h3>订阅51CTO邮刊</h3>
+                    <h4><a href="http://news.51cto.com/col/1323/">点击这里查看样刊</a></h4>
+                    <a href="http://home.51cto.com/index.php?s=/Subscribe"><img src="http://static4.51cto.com/51cto/cms/2016/images/ljdy.jpg" alt="订阅51CTO邮刊"></a>
+                </dd>
+            </dl>
+        </div>
+        <div></div>
+    </div>
+    <!-- 文章右侧结束 -->
+    </div>
+<div class="footer_nav">
+   <div class="wrap">
+       <h2>51CTO旗下网站：</h2>
+       <a href="http://www.51cto.com">领先的IT技术网站 51CTO</a>|<a href="http://www.watchstor.com">领先的中文存储媒体 WatchStor</a>|
+       <a href="http://cio.51cto.com">中国首个CIO网站 CIOage </a>|<a href="http://www.hc3i.cn">中国首家数字医疗网站 HC3i</a>
+   </div>
+</div>
+<div id="ft"><div id="foot" align="center"><script src="http://images.51cto.com/images/copy_right/copy_right.js?v=0.1"></script></div></div>
+<div class="clk"><a class="ewm" href="###" target="_self"><img src="https://s5.51cto.com/wyfs02/M01/9B/36/wKiom1lfV4XgxZ3zAADAK8-_E6k046.jpg" style="display: none;"></a><a class="yjk" href="#comment" target="_self"></a><a class="topx" href="#topx" target="_self"></a></div>
+<script>
+    $(function(){
+        var host = window.location.host;
+        document.getElementById('cnxh').style.display = '';
+    });
+    var $$ = function(func){
+        if (document.addEventListener) {
+            window.addEventListener("load", func, false);
+        }
+        else if (document.attachEvent) {
+            window.attachEvent("onload", func);
+        }
+    };
+
+    $$(function(){
+        show();
+    });
+    var show = function(){
+        var aa = $('#cmscmt_iframe dl').html();
+        setTimeout(function(){
+            $("[data-track]").live("click", function() {
+                if (aa.indexOf('uid') > -1) {
+                    var label = $(this).data("track") + '-login';
+                } else {
+                    var label = $(this).data("track") + '-not-login';
+                }console.log(label);
+                window._hmt && window._hmt.push(['_trackEvent', label, 'click']);
+
+            });
+        }, 3000);
+    }
+
+</script>
+<script src="http://logs.51cto.com/rizhi/count/count.js"></script>
+<!-- 悬浮广告 -->
+
+<!--end-->
+<!-- 学院广告位 -->
+
+<div id="edu_adver">
+    <div class="aderbox">
+        <span class="educlose">×</span>
+        <a href="http://edu.51cto.com/activity/4.html?qd=CMSzuoce1"><img src="https://s4.51cto.com/wyfs02/M02/A7/58/wKioL1nlhZiywrjzAABWRqKRTzU206.png" width="100" height="300" alt="Python最火的编程语言" title="Python最火的编程语言"></a>
+    </div>
+</div>
+<style type="text/css">
+    #edu_adver{position:fixed; top:240px; left:50%; margin-left:-623px; width:100px; height:300px; border:1px solid #c4c4c6;}
+    #edu_adver .aderbox{position:relative;}
+    #edu_adver  .educlose{position:absolute; right:6px; top:6px; background:#655c4d; color:#fff; font-size:12px;  display:inline-block; width:13px; height:13px; text-align:center; line-height:13px; cursor:pointer;}
+</style>
+<script>
+    $('#edu_adver .educlose').click(function () {
+        $("#edu_adver").hide();
+    });
+    var s=window.location.toString();
+    var s1=s.substr(7,s.length);
+    var s2=s1.indexOf(".");
+    s=s.substr(7,s2);
+    if(s=="stor"||s=="server"||s=="network"){
+        $("#edu_adver").hide();
+    }
+//    if (s == 'ai') {
+//        $('.aderbox').find('a')[0].href = '';
+//        $('.aderbox').find('img')[0].src = 'https://s2.51cto.com/wyfs02/M00/9C/37/wKioL1ltr5bwCB7VAAA8eAL27pA88.jpeg';
+//    }
+</script>
+<script>
+$(function(){
+var str = '<div class="fl zxf_showBox" style="padding-right: 10px;position:relative;"> ' +
+        '<a href="###" title=" " target="_self" class="z_bds_more">&nbsp;移动端</a> <div class="navcodebox clearfix">'+
+        '<div class="ico"></div>'+
+        '<span> <img src="https://s3.51cto.com/wyfs02/M02/97/8A/wKiom1kvkpKBgQFIAACDBen2-dg668.jpg" width="105" height="107"> <p>51CTO技术栈</p> </span>'+
+        '<span> <img src="http://s5.51cto.com/wyfs02/M02/8E/33/wKioL1i40HrAObC6AAAcvPVCCV0975.jpg" width="105" height="107"> <p>51CTO微站服务号</p> </span>'+
+        '<span><img src="http://s3.51cto.com/wyfs02/M00/8E/33/wKioL1i40HrQZy_TAAAcDOkrRAE327.jpg" width="107" height="107"> <p>51CTO学院客户端</p> </span></div> </div>';
+    $(".wznr dd").prepend(str);
+    $('.zxf_showBox').hover(function(){
+        $(this).find('.navcodebox').show();
+    },function(){
+        $(this).find('.navcodebox').hide();
+    })
+});
+</script>
+<script src="http://home.51cto.com/iframe/iframe-member-adv?www"></script>
+<script type="text/javascript">var artid = 463667</script>
+<script src='http://home.51cto.com/index.php?s=/Index/getLoginStatus2015/reback/http%253A%252F%252Fmobile.51cto.com%252Fweb-463667.htm' charset="utf-8"></script>
+<script type="text/javascript" src="http://static4.51cto.com/51cto/cms/2016/js/article.js?v=1.0"></script>
+<script type="text/javascript" src="http://static5.51cto.com/51cto/cms/2016/js/article_ajax.js?v=2.1"></script>
+<script src="http://other.51cto.com/php/count.php?view=yes&artID=463667" type="text/javascript"></script>
+<script type="text/javascript" src="http://home.51cto.com/apps/favorite/Tpl/default/Public/js/favorbox.js"></script>
+<!--  一大波JS来袭 -->
+<div id="MyMoveAd" style="display:none">
+    <span id="pinglun"><script type="text/javascript" src="http://other.51cto.com/php/getArtCount.php?artid=463667&type=all"></script></span>
+	<span id="tonglan"><script type="text/javascript" src="http://image.51cto.com/ad/art/tonglan/ad.js"></script></span>
+	<span id="wordlink_1"><script src="http://image.51cto.com/ad/art/wordlink/wordlink1.js"></script></span>
+	<span id="wordlink_2"><script src="http://image.51cto.com/ad/art/wordlink/wordlink2.js"></script></span>
+	<span id="wordlink_3"><script src="http://image.51cto.com/ad/art/wordlink/wordlink3.js"></script></span>
+	<span id="wordlink_4"><script src="http://image.51cto.com/ad/art/wordlink/wordlink4.js"></script></span>
+	<span id="wordlink"><script  src="http://image.51cto.com/ad/art/wordlink/ad.js"></script></span>
+</div>
+<script type="text/javascript">
+var thistid=463667;
+//收藏按钮
+var favor_url = 'http://mobile.51cto.com/web-463667.htm';
+var favor_title = '开发移动应用程序的三种选择：原生、HTML5或混合';  
+document.getElementById('tonglanad').innerHTML=document.getElementById('tonglan').innerHTML;
+</script>
+<!-- 结束 -->
+</body>
+</html>

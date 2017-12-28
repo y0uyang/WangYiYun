@@ -1,0 +1,147 @@
+.musicplayCls{
+    background: linear-gradient(#8a8b8d,#5c5c68,#7d4544,#48494e,#5e5e60,#737172,#6a6b6d,#1f2022);
+    height: 13.34rem;
+}
+.musicplayCls>.header{
+    display: flex;
+    padding: .22rem .36rem;
+    align-items: center;
+    position: relative;
+    color:#fff;
+}
+.musicplayCls>.header>div{
+    text-align: center;
+    flex-grow: 1;
+}
+.musicplayCls>.header>img:nth-of-type(1){
+    width: .25rem;
+    height: .46rem
+}
+.musicplayCls>.header>img:nth-of-type(2){
+    width: .4rem;
+    height: .49rem
+}
+.musicplayCls>.header>div>p:nth-of-type(1){
+    font-size: .28rem;
+    font-family: SimHei;
+    margin-bottom: .1rem;
+}
+.musicplayCls>.header>div>p:nth-of-type(2){
+    font-size: .22rem;
+    font-family: SimHei;
+}
+.musicplayCls>img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background:fixed rgba(0,0,0,0.3);
+    filter: blur(100px);  
+    z-index: 0
+}
+
+.musicImgCls{
+    width: 5.7rem;
+    height: 5.7rem;
+    border-radius:50%;
+    overflow: hidden;
+}
+.musicImgCls>img{
+    transform:rotate(0deg);
+    width: 5.7rem;
+    height: 5.7rem;
+}
+.musicplayCls>div:nth-of-type(3){
+    border: .9rem transparent solid;
+}
+
+
+/* 
+.musicplayCls>.cir{
+    text-align: center;
+}
+.musicplayCls>.cir>div{
+    width: .54rem;
+    height: .54rem;
+    background-color: red;
+    border-radius: 50%;
+}
+.musicplayCls>.cir>div>div{
+    width: .27rem;
+    height: .27rem;
+    background-color: black;
+    border-radius: 50%;
+} */
+
+
+
+
+.playBtn{
+    display: flex;
+    justify-content: space-around;
+    width: 6.1rem;
+    margin: .7rem 0 .8rem;
+    padding:0 .7rem;
+    position: relative;
+}
+.playBtn>img{
+    width: .44rem;
+    height: .44rem;
+}
+
+
+
+.musicplayCls>.plan{
+    display: flex;
+    justify-content: space-between;
+}
+.musicplayCls>.plan span{
+    font-size: .18rem;
+    color: #fff;
+    margin: 0 .23rem;
+}
+#didPoint{
+    width: .32rem;
+    height: .32rem;
+    position: absolute;
+    z-index: 4;
+}
+.plan>div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.plan .all{
+    height: 0;
+    width: 5.4rem;
+    border: .02rem #7b7c81 solid;
+    z-index: 2;
+}
+#didLine{
+    height: 0;
+    border: .02rem #aaacb7 solid;
+    position: absolute;
+    left:0;
+    z-index: 3;
+}
+
+
+
+
+.playJob{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    margin: .4rem 0 .6rem;
+}
+.playJob>img{
+    width: .5rem;
+    height: .50rem;
+}
+.playJob>img:nth-of-type(3){
+    width: 1rem;
+    height: 1rem;
+}

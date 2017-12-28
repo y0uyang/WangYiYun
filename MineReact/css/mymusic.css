@@ -1,0 +1,69 @@
+.mymusicCls .header{
+    display: flex;
+    align-items: center;
+    background-color: #d43c33;
+    width: 6.82rem;
+    padding:.34rem;
+}
+.mymusicCls .header>span:nth-of-type(1){
+    font-family: SimHei;
+    font-size: .32rem;
+    color:#fff;
+    
+}
+.mymusicCls .header>span:nth-of-type(2){
+    text-align: center;
+    font-size: .36rem;
+    font-family: SimHei;
+    color:#fff;
+    flex-grow: 1;
+}
+.mymusicCls .header>img{
+    width: .42rem;
+    height: .42rem;
+}
+.mymusicCls>ul:nth-of-type(1)>li{
+    display: flex;
+    padding-left: .4rem;
+}
+.mymusicCls>ul:nth-of-type(1)>li>img{
+    width: .49rem;
+    height: .49rem;
+    margin:.3rem .5rem 0 0;
+}
+.mymusicCls>ul:nth-of-type(1)>li>div{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    border-bottom: .01rem #e2e3e4 solid;
+    padding: .36rem 0;
+}
+.mymusicCls>ul:nth-of-type(1)>li>div>span:nth-of-type(1){
+    font-size: .34rem;
+    flex-grow: 1;
+    font-family: SimHei;
+}
+.mymusicCls>ul:nth-of-type(1)>li>div>span:nth-of-type(2){
+    font-size: .24rem;
+    color: #979798;
+}
+.mymusicCls>ul:nth-of-type(1)>li>div>img{
+    width: .16rem;
+    height: .28rem;
+    margin: 0 .2rem 0 .16rem;
+}
+
+.myMusicList li:nth-of-type(1){
+    display: flex;
+    align-items: center;
+    background-color: #eeeff0;
+    padding: .2rem .24rem;
+}
+.myMusicList li:nth-of-type(1)>span{
+    font-size: .26rem;
+}
+.myMusicList li:nth-of-type(1)>img{
+    width: .12rem;
+    height: .21rem;
+    margin-right: .26rem;
+}
